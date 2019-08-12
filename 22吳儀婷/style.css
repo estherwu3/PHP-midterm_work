@@ -1,0 +1,236 @@
+/*全域屬性設定*/
+*{
+  box-sizing: border-box;
+  font-size:16px;
+  font-family: "微軟正黑體",Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+}
+html{
+  width:100%;
+  height:100%;
+}
+body{
+  width:100%;
+  height:100%;
+}
+
+/*基本版型設定*/
+.wrap{
+  /* width:1000px; */
+  width:100%;
+  height:100%;
+  margin:auto;
+  background-image:url("./asset/AA.jpg");
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-position: center;
+}
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+#header{
+  width:100%;
+  height:150px;
+  position: relative;
+  text-align: center;
+}
+#sidebar{
+  /* width:150px; */
+  width:100%;
+  /* height:calc(100% - 150px - 100px); */
+  height:55px;
+  float:left;
+  background:rgba(255 ,217 ,236,0.5);
+
+}
+#sidebar li{
+  display:inline-block;
+  width:90px;
+  text-align:center;
+}
+#sidebar li a{
+  text-decoration:none;
+  color:#9f0050	;
+  font-weight: bolder;
+  height:100%;
+  padding:1px 10px ;
+  display:block;
+}
+
+#sidebar li a:hover{
+  color:#9f0050	;
+  background: #ff79bc	;
+}
+
+
+#content{
+  /* width:calc(100% - 150px); */
+  width:100%;
+  height:calc(100% - 150px - 50px - 55px);
+  /* float:left; */
+  clear:left;
+  padding:20px;
+  overflow: auto;
+  text-align: center;
+}
+#footer{
+  clear:left;
+  width:100%;
+  height:50px;
+  /* background-image:url("./asset/footer.png");
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center; */
+  line-height: 80px;
+  text-align: center;
+  color:rgb(0, 0, 0);
+}
+
+#banner{
+  /* background-image:url("./asset/header.png");
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center; */
+  width:100%;
+  height:100%;
+  position: absolute;
+  z-index:0;
+}
+
+/*****內容元件設定******/
+
+.login{
+  margin:auto;
+}
+
+.reg{
+  margin:auto;
+}
+
+.errmeg{
+  color:red;
+  font-size:12px;
+  font-family:"微軟正黑體";
+  text-align:left;
+}
+/* 導覽列設定 */
+.nav{
+  position: absolute;
+  z-index:2;
+  /* bottom:0; */
+  top: 40%;
+  width:100%;
+  background:rgba(255 ,217 ,236,0.5);
+}
+.nav li{
+  display:inline-block;
+  width:90px;
+  text-align:center;
+}
+.nav li a{
+  text-decoration:none;
+  color:#9f0050	;
+  font-weight: bolder;
+  height:100%;
+  padding:5px 0;
+  display:block;
+}
+.nav li a:hover{
+  color:#9f0050	;
+  background: #ff79bc	;
+}
+
+/* 側邊選單設定 */
+.menu li{
+  width:100%;
+  text-align:center;
+  margin:5px auto;
+
+}
+.menu li a{
+  text-decoration: none;
+  display:block;
+  padding:10px 0;
+}
+.menu li a:hover{
+  background:lightgreen;
+}
+
+/* 表格格線設定 */
+.table{
+  border-collapse: collapse;
+  margin: 0 auto;
+  background:rgba(255, 217, 236, 0.5);
+}
+.table td{
+  padding:3px 10px;
+  border:1px solid #999;
+}
+
+/* 圓角按鈕設定 */
+.btn li{
+  display:inline-block;
+  margin:10px 10px;
+  width:80px;
+  height:30px;
+  line-height:26px;
+  border-radius:10px;
+  border:2px solid #999;
+  box-shadow:1px 1px 3px #ccc;
+  text-align:center;
+  vertical-align:middle;
+}
+.btn li:hover{
+  background:lightgreen;
+  border-radius:10px;
+}
+.btn li .active{
+  background:lightblue;
+  border-radius:8px;
+}
+.btn li a{
+  text-decoration:none;
+  display:block;
+}
+/* 後台項目列表格式設定 */
+.list{
+  border:2px solid #ccc;
+  box-shadow:1px 1px 3px #ccc;
+  padding:5px;
+  width:500px;
+  margin:10px auto;
+  background:rgba(255, 217, 236, 0.5);
+}
+.list li div{
+display:inline-block;
+}
+
+.list li div:nth-child(1){
+width:90px;
+padding:5px;
+text-align:center;
+}
+.list li div:nth-child(2){
+width:300px;
+padding:5px 0;
+text-align:left;
+}
+.list li:nth-last-child(1){
+text-align:right;
+}
+.list li button,.list li input[type='submit']{
+margin:5px 10px;
+}
+
+/* 後台功能標題 */
+#content h1{
+  width:500px;
+  text-align: center;
+  font-size:30px;
+  padding:10px 0;
+  font-weight:bolder;
+}
